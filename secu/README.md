@@ -48,10 +48,12 @@ Dans phpMyAdmin, sélectionnez la base de données IIM_A2CDI_secu.
 Importez le fichier setup.sql fourni dans le projet pour créer les tables nécessaires (Article et users).
 
 Étape 3 : Configurer l'application
+
 Placez le dossier secu dans le répertoire www de Laragon.
 Vérifiez les informations de connexion dans le fichier bdd.php et ajustez-les si nécessaire pour votre configuration locale.
 
 Étape 4 : Lancer l'application
+
 Ouvrez Laragon et, dans le tableau de bord, cliquez sur "www" pour accéder à la liste des projets.
 Sélectionnez secu pour accéder à l'application depuis http://localhost/secu/index.php.
 
@@ -64,6 +66,7 @@ Utilisez un compte administrateur pour accéder aux fonctionnalités de gestion 
 Gestion des articles
 Administrateur : Peut ajouter, modifier, et supprimer des articles via les pages correspondantes.
 Utilisateur : Peut lire les articles sans options de modification.
+
 Gestion des utilisateurs
 Seuls les administrateurs peuvent ajouter de nouveaux utilisateurs et définir leur rôle via register.php.
 
@@ -77,10 +80,13 @@ Postman
 Utilisez Postman pour tester les requêtes HTTP :
 
 Connexion :
+
 Méthode : POST
 URL : http://localhost/secu/login.php
 Body : Form-data avec username et password.
+
 Ajout d'article (administrateur + token CSRF) :
+
 Méthode : POST
 URL : http://localhost/secu/traitement.php
 Body : Form-data avec title, content, slug, et csrf_article_add.
