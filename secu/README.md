@@ -34,32 +34,45 @@ Ce projet est une application web de gestion d'articles, où les utilisateurs pe
    cd secu
 
 Étape 2 : Configurer la base de données
+
 Démarrez Laragon : Installez Laragon si ce n'est pas encore fait et lancez-le.
+
 Créer une base de données :
+
 Accédez à phpMyAdmin via Laragon.
 Créez une base de données nommée IIM_A2CDI_secu.
+
 Importer le fichier SQL :
+
 Dans phpMyAdmin, sélectionnez la base de données IIM_A2CDI_secu.
 Importez le fichier setup.sql fourni dans le projet pour créer les tables nécessaires (Article et users).
+
 Étape 3 : Configurer l'application
 Placez le dossier secu dans le répertoire www de Laragon.
 Vérifiez les informations de connexion dans le fichier bdd.php et ajustez-les si nécessaire pour votre configuration locale.
+
 Étape 4 : Lancer l'application
 Ouvrez Laragon et, dans le tableau de bord, cliquez sur "www" pour accéder à la liste des projets.
 Sélectionnez secu pour accéder à l'application depuis http://localhost/secu/index.php.
+
 Utilisation
+
 Connexion
 Accédez à login.php pour vous connecter.
 Utilisez un compte administrateur pour accéder aux fonctionnalités de gestion d'articles et d'utilisateurs.
+
 Gestion des articles
 Administrateur : Peut ajouter, modifier, et supprimer des articles via les pages correspondantes.
 Utilisateur : Peut lire les articles sans options de modification.
 Gestion des utilisateurs
 Seuls les administrateurs peuvent ajouter de nouveaux utilisateurs et définir leur rôle via register.php.
+
 Guide d'utilisation de Laragon et Postman
+
 Laragon
 Serveur local : Placez le projet dans le dossier www de Laragon, puis lancez-le.
 Accès à phpMyAdmin : Utilisez Laragon pour ouvrir phpMyAdmin et gérer la base de données.
+
 Postman
 Utilisez Postman pour tester les requêtes HTTP :
 
