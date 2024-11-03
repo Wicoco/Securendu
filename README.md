@@ -1,6 +1,6 @@
 # Projet "Secu" - Gestion sécurisée d'articles avec rôle administrateur
 
-by Victor Fernel
+Victor Fernel
 
 Ce projet est une application web de gestion d'articles, où les utilisateurs peuvent lire les articles publiés et les administrateurs peuvent gérer le contenu et les utilisateurs. Le projet utilise PHP et MySQL pour la gestion du contenu et de l'authentification avec des mesures de sécurité comme le hachage de mots de passe et un token CSRF.
 
